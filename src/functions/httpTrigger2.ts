@@ -68,7 +68,7 @@ export async function httpTrigger2(request: HttpRequest, context: InvocationCont
     
     exampleObjMD5 === exampleObj2MD5 ? context.log('Objects are equal') : context.log('Objects are not equal');
 
-    return { body: `MD5, ${exampleObjMD5}, ${exampleObj2MD5}` };
+    return { body: `MD5, ${exampleObjMD5}, ${exampleObj2MD5}, ${Date.now()}` };
 };
 
 app.http('httpTrigger2', {
