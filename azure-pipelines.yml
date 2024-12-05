@@ -5,8 +5,6 @@
 
 pool:
   name: Default
-  demands:
-   - agent.name -equals mmoravcik-trask
 
 trigger:
 - master
